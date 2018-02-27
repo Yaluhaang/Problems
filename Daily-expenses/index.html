@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div id="mainContainer" class="container-fluid ">
+      <div class="card mx-auto  bg-light">
+          <div class="row">
+        <h1 class="card-title p-4 text-info mx-auto ">Your Daily Expenses</h1>
+      </div>
+      
+      <div class="row">
+        <form class="mx-auto col-lg-8 p-3 ">
+          <div class="form-group px-4">
+            <div class="row">
+                <input type="text" class="form-control col-sm-5 m-2" id="item" placeholder="Item you purchased" v-model="item" required>
+                <input type="text" class="form-control col-sm m-2" id="price" placeholder="Price of the item" v-model="price" required>
+                <input type="date" class="form-control col-sm m-2" id="date" v-model="dop" required>
+                <button type="submit" class="btn btn-primary m-2" @click="addItem">Add</button>
+            </div>
+          </div>
+          
+        </form>
+      </div>
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Date</th>
+          <th scope="col">Purchased Item</th>
+          <th scope="col">Price</th>
+        </tr>
+      </thead>
+      <tbody   v-if="tableItem.length" v-html="tableList">
+        
+      </tbody>
+    </table>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
