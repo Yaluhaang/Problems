@@ -1,0 +1,73 @@
+* {margin: 0; padding: 0;
+}
+
+
+#big-wrapper {background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(pexel1.jpg);
+    height: 100vh;
+    background-size:cover;
+background-position: center;
+
+}
+
+#main-nav {float: left;
+    list-style: none;
+    margin-top: 200px;
+}
+
+#main-nav li {display:inline-block;}
+
+#main-nav li a {
+        color:white;
+        text-decoration: none;
+        padding: 10px 30px;
+        font-family: century gothic;
+        font-size: 20px;
+}
+
+
+#main-nav li#active a  {border:1px solid white; }
+
+
+
+
+#logo img{width: 300px;
+height: auto;
+float: left;}
+
+
+#big-wrapper {max-width: 1200px;
+margin:auto;}
+
+
+#join { position: absolute;
+    width: 1200px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+h1 { color: white;
+    text-transform: uppercase;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 275px;
+    font-family: century gothic;
+    
+}
+
+.button { margin-top: 30px;
+        margin-left: 430px;
+        }
+
+.btn { border: 1px solid white;
+    padding: 10px 30px;
+    color:white;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.btn-one { background-color:#7db2ba;
+font-family: century gothic;}
+
+.btn-two {font-family: century gothic;}
